@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script src="funcoes.js"></script>
+<script>
+    var i, num, soma=0, media, maior=0, menor;
+
+    document.write('Números informados pelo usuário: <br>');
+    for(i = 1; i <= 10; i++){
+        num = Number(prompt('Informe o '+i+' número:'));
+
+        somarNums();
+        acharMaior();
+        acharMenor();
+
+        document.write(num, '<br>');
+    }
+    calcularMedia();
+    document.write('<hr> Relatório <hr>');
+    document.write('a) soma = ', soma, '<br>');
+    document.write('b) média = ', media, '<br>');
+    document.write('c) maior = ', maior, '<br>');
+    document.write('d) menor = ', menor, '<br>');
+</script>

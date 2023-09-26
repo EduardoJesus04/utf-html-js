@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script src="funcoes.js"></script>
+<script>
+
+    var operacao, n1, n2, adicao, subtracao, multiplicacao, divisao, resp
+
+    operacao = prompt("Olá, sou uma calculadora! Qual tipo de operação deseja realizar? adição, subtração, multiplicação ou divisão?");
+    n1 = Number(prompt('insira o primeiro número: '));
+    n2 = Number(prompt('insira o segundo número: '));
+
+    resp = executarOperacao();
+
+    document.write('<br>n1: ', n1, '<br>n2: ', n2, '<br>Operação: ', operacao);
+    document.write('<br>Resposta: ', resp);
+    
+
+
+</script>

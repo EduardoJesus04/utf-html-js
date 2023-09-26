@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+
+    var totalPrestacoes;
+    var prestacoesPagas;
+    var valorAtual;
+    var totalPago;
+    var saldoDevedor;
+
+
+    totalPrestacoes = Number(prompt("Qual o número total de prestações que deve ser pago?"));
+    prestacoesPagas = Number(prompt("Quantas prestações já foram pagas?"));
+    valorAtual = Number(prompt("Qual é o valor atual das prestações?"))
+    totalPago = valorAtual * prestacoesPagas;
+    saldoDevedor = (totalPrestacoes - prestacoesPagas) * valorAtual;
+
+    document.write("O valor total pago em prestações até agora foi de: ", totalPago.toFixed(2), "<br>");
+    document.write("O saldo devedor restante é de: ", saldoDevedor.toFixed(2));
+
+
+</script>
